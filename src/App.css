@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.divBody{
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.inputfeilds{
+  border: none;
+  background-color: rgba(240, 248, 255, 0);
+  color: rgb(64, 50, 83);
+}
+.inputfeilds:focus{
+  background-color: rgba(255, 255, 255, 0.71);
+  outline: solid rgb(202, 178, 212);
+}
+.upperbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.UnCompLists, .CompLists{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1vh;
+}
+.task{
+  background-color: rgb(185, 141, 205);
+  margin: 1vh;
 }
 
-.App-link {
-  color: #61dafb;
+.taskname{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh;
+}
+.des{
+  background-color: rgb(221, 203, 231);
+}
+.des input{
+  width: 95%;
+  padding: 0.5rem;
+  text-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tasktime{
+  background-color: rgb(221, 203, 231);
+  color: rgb(64, 50, 83);
+  padding: 0.5rem;
+}
+
+.inputElements{
+  margin-top: 3vh;
+  display: flex;
+  width: 50vw;
+  align-items: center;
+}
+
+.inputText{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.addButton{
+ height: 7vh;
+  width: 5vw;
+}
+
+.textInput, .textArea{
+  padding: 2vh;
+}
+
+button{
+  background-color: rgb(106, 69, 122);
+  color: rgb(234, 207, 246);
+  border: none;
+  margin: 0.5rem;
 }
